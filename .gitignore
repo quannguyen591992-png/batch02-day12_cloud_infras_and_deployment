@@ -35,6 +35,16 @@ Thumbs.db
 data/
 volumes/
 
+# Keep the personal Day 8 RAG demo runtime data for Railway deployment
+!07-lab-ca-nhan-day-8/data/
+!07-lab-ca-nhan-day-8/data/index/
+!07-lab-ca-nhan-day-8/data/index/**
+!07-lab-ca-nhan-day-8/data/standardized/
+!07-lab-ca-nhan-day-8/data/standardized/**
+!07-lab-ca-nhan-day-8/data/landing/
+!07-lab-ca-nhan-day-8/data/landing/news/
+!07-lab-ca-nhan-day-8/data/landing/news/**
+
 # ── Local logs / runtime artifacts ──────────────────────────
 *.log
 *.pid
