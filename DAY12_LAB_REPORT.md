@@ -631,7 +631,13 @@ This confirms the personal Streamlit RAG app was deployed successfully and is re
 | Part 3 | Railway Cloud Deployment | Completed |
 | Part 4 | API Security | Completed |
 | Part 5 | Scaling & Reliability | Completed |
-| Part 6 | Personal project direction | Prepared / next deployment target |
+| Part 6 | Personal project deployment | Completed |
+| Final report | DAY12_LAB_REPORT.md | Updated with both public URLs |
+
+**Overall status:** All Day 12 requirements are completed and deployed.
+
+- Part 3 demo URL: `https://batch02-day12cloudinfrasanddeployment-production-7970.up.railway.app`
+- Personal project 07 URL: `https://batch02-day12cloudinfrasanddeployment-production-2365.up.railway.app`
 
 ---
 
