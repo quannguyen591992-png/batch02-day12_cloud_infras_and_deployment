@@ -34,3 +34,12 @@ Thumbs.db
 # ── Docker volumes (local dev) ─────────────────────��──────
 data/
 volumes/
+
+# ── Local logs / runtime artifacts ──────────────────────────
+*.log
+*.pid
+
+# ── Nested/imported project artifacts ───────────────────────
+.ocr_tmp/
+*/.ocr_tmp/
+*/.git/
