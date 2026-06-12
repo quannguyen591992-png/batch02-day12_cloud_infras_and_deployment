@@ -11,8 +11,19 @@ Chạy sau khi docker compose up:
     python test_stateless.py
 """
 import json
+import sys
 import urllib.request
 import urllib.error
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
+try:
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 BASE_URL = "http://localhost:8080"
 session_id = None

@@ -38,11 +38,11 @@ try:
     _redis = redis.from_url(REDIS_URL, decode_responses=True)
     _redis.ping()
     USE_REDIS = True
-    print("✅ Connected to Redis")
+    print("Connected to Redis")
 except Exception:
     USE_REDIS = False
     _memory_store: dict = {}
-    print("⚠️  Redis not available — using in-memory store (not scalable!)")
+    print("Redis not available - using in-memory store (not scalable!)")
 
 
 logging.basicConfig(level=logging.INFO)
