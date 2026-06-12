@@ -544,9 +544,9 @@ State should not be kept in local process memory when scaling horizontally. Redi
 
 ---
 
-## 8. Part 6 Direction — Personal Final Project
+## 8. Part 6 — Personal Final Project Deployment
 
-The final project will use:
+The final personal project uses:
 
 ```text
 07-lab-ca-nhan-day-8/
@@ -588,19 +588,37 @@ logs
 large local data ignored by gitignore
 ```
 
-The planned deployment approach is Option A:
+The deployment approach was Option A:
 
 ```text
 Deploy the Streamlit app first for a fast working public demo.
 ```
 
-Potential deployment steps:
+Deployment files and runtime data were added:
 
-1. Add Streamlit Dockerfile or Railway config.
-2. Ensure required runtime index/data is available.
-3. Set required environment variables in Railway if using Gemini.
-4. Deploy with Railway root directory `07-lab-ca-nhan-day-8`.
-5. Test Streamlit health endpoint and browser UI.
+```text
+07-lab-ca-nhan-day-8/Dockerfile
+07-lab-ca-nhan-day-8/railway.toml
+07-lab-ca-nhan-day-8/.streamlit/config.toml
+07-lab-ca-nhan-day-8/requirements.deploy.txt
+07-lab-ca-nhan-day-8/data/index/
+07-lab-ca-nhan-day-8/data/standardized/
+```
+
+Personal project Railway URL:
+
+```text
+https://batch02-day12cloudinfrasanddeployment-production-2365.up.railway.app
+```
+
+Validation results:
+
+```text
+GET /_stcore/health -> 200 ok
+GET /                -> 200 Streamlit UI loaded
+```
+
+This confirms the personal Streamlit RAG app was deployed successfully and is reachable through a public Railway domain.
 
 ---
 
