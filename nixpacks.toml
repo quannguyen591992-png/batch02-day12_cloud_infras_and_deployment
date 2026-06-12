@@ -1,0 +1,12 @@
+# Railway/Nixpacks config for Day 12 Part 3 deployment.
+# This lets Railway deploy from the repository root while running the app
+# located in 03-cloud-deployment/railway.
+
+[phases.setup]
+nixPkgs = ["python311"]
+
+[phases.install]
+cmds = ["pip install -r 03-cloud-deployment/railway/requirements.txt"]
+
+[start]
+cmd = "cd 03-cloud-deployment/railway && uvicorn app:app --host 0.0.0.0 --port $PORT"
